@@ -1,0 +1,6 @@
+#messages  li { padding: 15px 10px; }
+      #messages  li { font-style: italic; font: 15px Sans-serif;}
+
+body { font: 13px Helvetica, Arial; }
+
+#messages  li:nth-child(odd) { background: rgb(rgb(5, 99, 47)); }

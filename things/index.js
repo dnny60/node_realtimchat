@@ -11,7 +11,7 @@ socket.emit('new-user', user_name);
 
 
 $(function(){
-    $('#join').append($('<li>').text('你已連接'));
+    $('#messages').append($('<p>').text('你已連接'));
 })
 
 
@@ -34,11 +34,12 @@ $(function () {
         $('#messages').append($('<li>').text(msg.name + ' : ' + msg.msg));
     });
 
+    //connected message
     socket.on('user-connected', name =>{
         if (name == check_name){
             console.log(name + 'name = check_name');
         } else {
-            $('#join').append($('<li>').text(name + " 已連接")); 
+            $('#messages').append($('<p>').text(name + " 已連接")); 
         };
     });
     socket.on('disconnect', name =>{
@@ -48,7 +49,7 @@ $(function () {
         if (name == null){
             return;
         } else {
-            $('#join').append($('<li>').text(name + " 已斷線"));
+            $('#join').append($('<p>').text(name + " 已斷線"));
         }
     
     });
