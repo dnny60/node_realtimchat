@@ -1,7 +1,7 @@
 //import { Socket } from "dgram";
 
 var user_name = 0;
-var socket = io('http://localhost:3000');
+var socket = io();
 //<script>var name = prompt('hi')</script>
 
 user_name = prompt('what is your fucking name??')
