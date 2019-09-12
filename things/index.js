@@ -49,7 +49,7 @@ $(function () {
         if (name == null){
             return;
         } else {
-            $('#join').append($('<p>').text(name + " 已斷線"));
+            $('#messages').append($('<p>').text(name + " 已斷線"));
         }
     
     });
